@@ -16,7 +16,7 @@ async function type() {
   });
   const page = await browser.newPage();
   await page.goto(url, { waitUntil: "networkidle0" });
-  // // press the class "acceptAll" in the popup with id "cookiePopup"
+
   // await page.click("#cookiePopup .acceptAll");
   // only if the #cookiePopup is visible
   const cookiePopup = await page.$("#cookiePopup");
